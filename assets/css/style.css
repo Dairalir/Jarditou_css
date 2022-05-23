@@ -1,0 +1,34 @@
+body {
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+#logo {
+    width: 250px;
+}
+
+nav, footer {
+    background-color: black;
+    height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline-block; 
+}
+
+a {
+    color: white;
+}
+
+#promotion {
+    width: 100%;
+}
