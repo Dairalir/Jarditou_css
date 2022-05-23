@@ -71,7 +71,7 @@ p {
     line-height: 2em;
 }
 
-section {
+.introduction {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
