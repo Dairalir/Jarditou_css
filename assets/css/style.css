@@ -1,8 +1,25 @@
+html {
+    font-size: 100%;
+}
+@media screen and (max-width: 768px) 
+{
+    body {
+        font-size: 8pt;
+        }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -10,7 +27,7 @@ h1 {
 }
 
 #logo {
-    width: 250px;
+    width:200px;
 }
 
 nav, footer {
@@ -18,11 +35,18 @@ nav, footer {
     height: 70px;
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
 
 li {
-    display: inline-block; 
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) 
+{
+    li {
+        display: list-item;
+        }
 }
 
 a {
@@ -34,7 +58,7 @@ a {
 }
 
 .accueil {
-    font-size: 30pt;
+    font-size: 20pt;
 }
 
 #ligneaccueil {
@@ -47,13 +71,28 @@ p {
     line-height: 2em;
 }
 
-.introduction {
+section {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+#prez {
+    margin-bottom: 5%;
 }
 
 #coldroite {
     background-color: lightgrey;
     height: auto;
-    width: 30%;
+    width: 30%;   
 }
+
+@media screen and (max-width: 768px) 
+{
+    #coldroite {
+        display: none;
+        width: 0%;
+        }
+}
+
+  
