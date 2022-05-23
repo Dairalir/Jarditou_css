@@ -32,3 +32,28 @@ a {
 #promotion {
     width: 100%;
 }
+
+.accueil {
+    font-size: 30pt;
+}
+
+#ligneaccueil {
+    background-color: lightgray;
+    height: 1px;
+    border: none;
+}
+
+p {
+    line-height: 2em;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+}
+
+#coldroite {
+    background-color: lightgrey;
+    height: auto;
+    width: 30%;
+}
