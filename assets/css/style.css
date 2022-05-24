@@ -74,17 +74,18 @@ p {
 .introduction {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .texte {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 5%;
 }
 
 #coldroite {
     background-color: lightgrey;
-    height: auto;
-    width: 30%;   
+    height: auto; 
+    width: 30%;
 }
 
 @media screen and (max-width: 768px) 
