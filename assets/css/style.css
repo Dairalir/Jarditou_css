@@ -4,7 +4,7 @@ html {
 @media screen and (max-width: 768px) 
 {
     body {
-        font-size: 8pt;
+        font-size: 0.9em;
         }
 }
 img {
