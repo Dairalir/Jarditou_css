@@ -1,12 +1,7 @@
 html {
     font-size: 100%;
 }
-@media screen and (max-width: 768px) 
-{
-    body {
-        font-size: 0.9em;
-        }
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -40,13 +35,6 @@ nav, footer {
 
 li {
     display: inline-block;
-}
-
-@media screen and (max-width: 768px) 
-{
-    li {
-        display: list-item;
-        }
 }
 
 a {
@@ -90,6 +78,14 @@ p {
 
 @media screen and (max-width: 768px) 
 {
+    body {
+        font-size: 0.9em;
+        }
+    
+    li {
+        display: list-item;
+        }
+
     #coldroite {
         display: none;
         width: 0%;
