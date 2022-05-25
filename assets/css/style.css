@@ -21,7 +21,7 @@ h1 {
     font-weight: normal;
 }
 
-#logo {
+.logo {
     width:200px;
 }
 
@@ -41,7 +41,7 @@ a {
     color: white;
 }
 
-#promotion {
+.promotion {
     width: 100%;
 }
 
@@ -70,7 +70,7 @@ p {
     margin-bottom: 5%;
 }
 
-#coldroite {
+.colonne {
     background-color: lightgrey;
     height: auto; 
     width: 30%;
@@ -86,7 +86,7 @@ p {
         display: list-item;
         }
 
-    #coldroite {
+    .colonne {
         display: none;
         width: 0%;
         }
