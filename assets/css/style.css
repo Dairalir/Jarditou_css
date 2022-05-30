@@ -76,6 +76,10 @@ p {
     width: 30%;
 }
 
+.tableau {
+    width: 500px;
+}
+
 @media screen and (max-width: 768px) 
 {
     body {
