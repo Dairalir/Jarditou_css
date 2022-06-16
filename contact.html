@@ -28,15 +28,21 @@
             <fieldset> <!--Encadre l'ensemble des balise intérieur-->
                 <legend>Vos coordonnées</legend><br>
                 <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom" size="25" maxlength="25" required><br>
-                <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom" size="25" maxlength="25" required><br><br>
+                <span id="missNom"></span><br>
+                <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom" size="25" maxlength="25" required><br>
+                <span id="missPrenom"></span><br>
                 <label>Sexe*</label>
-                <label for="feminin"></label><input type="radio" name="sex" value="feminin" id="feminin" required>Féminin
-                <label for="masculin"></label><input type="radio" name="sex" value="masculin" id="masculin" required>Masculin <br><br>
+                <label for="feminin"></label><input type="radio" name="sex" value="feminin" class="sex" id="feminin" required>Féminin
+                <label for="masculin"></label><input type="radio" name="sex" value="masculin" class="sex" id="masculin" required>Masculin <br>
+                <span id="missSex"></span><br>
                 <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date" required><br>
+                <span id="missDate"></span><br>
                 <label for="codepostal">Code postal* :</label><input type="text" name="codepostal" id="codepostal" required><br>
+                <span id="missCp"></span><br>
                 <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"><br>
                 <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
-                <label for="email">Email* :</label><input type="text" placeholder="dave.loper@afpa.fr" name="email" id="email" required>
+                <label for="email">Email* :</label><input type="text" placeholder="dave.loper@afpa.fr" name="email" id="email" required><br>
+                <span id="missEmail"></span><br>
             </fieldset>
             <fieldset>
                 <legend>Votre demande</legend>
@@ -49,10 +55,11 @@
                     <option value="Autres">Autres</option>
                 </select><br>
                 <label for="question">Votre question* :</label>
-                <textarea name="question" id="question" required></textarea>
+                <textarea name="question" id="question" required></textarea><br>
+                <span id="missQuestion"></span><br>
             </fieldset> <br>
             <input type="checkbox" name="accepte" value="J'accepte le traitement informatique de ce formulaire" required>*J'accepte le traitement informatique de ce formulaire <br><br>
-            <button type="submit">Envoyer</button>
+            <button type="submit" id="envoi">Envoyer</button>
             <button type="reset">Annuler</button>
         </form>
     </section><hr>
@@ -63,5 +70,6 @@
             <li><a href="plandusite.html" title="Plan du site">Plan du site</a></li>
         </ul>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
