@@ -18,7 +18,9 @@ var missEmail = document.getElementById("missEmail");
 var question = document.getElementById("question");
 var missQuestion = document.getElementById("missQuestion");
 var accept = document.getElementById("accept");
-var missAccept = document.getElementById("missAccept")
+var missAccept = document.getElementById("missAccept");
+var sujet = document.getElementById("sujet")
+var missSujet = document.getElementById("missSujet");
 
 valid.addEventListener("click", control); // évenement de type clic et la fonction control
 
@@ -82,5 +84,10 @@ function control(e){
         e.preventDefault();
         missAccept.textContent = "Veuillez accepter le traitement informatique"
         missAccept.style.color = "red"
+    }
+    if(sujet.validity.valueMissing){
+        e.preventDefault();
+        missSujet.textContent = "Selectionnez un sujet";
+        missSujet.style.color = "red";
     }
 }

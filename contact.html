@@ -48,12 +48,13 @@
                 <legend>Votre demande</legend>
                 <label for="sujet">Sujet* :</label>
                 <select id="sujet" required>
-                    <option value="" disabled selected>Veuillez sélectionner un sujet</option>
-                    <option value="Commandes">Mes commandes</option>
-                    <option value="Question">Question sur un produit</option>
-                    <option value="Réclamation">Réclamation</option>
-                    <option value="Autres">Autres</option>
-                </select><br>
+                    <option value="" id="select" disabled selected>Veuillez sélectionner un sujet</option>
+                    <option value="Commandes" id="commande">Mes commandes</option>
+                    <option value="Question" id="produit">Question sur un produit</option>
+                    <option value="Réclamation" id="reclamation">Réclamation</option>
+                    <option value="Autres" id="autres">Autres</option>
+                </select>
+                <span id="missSujet"></span><br>
                 <label for="question">Votre question* :</label>
                 <textarea name="question" id="question" required></textarea><br>
                 <span id="missQuestion"></span><br>
