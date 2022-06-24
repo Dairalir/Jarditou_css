@@ -1,12 +1,10 @@
 html {
     font-size: 100%;
 }
-
 img {
     max-width: 100%;
     height: auto;
 }
-
 body {
     margin-left: 10%;
     margin-right: 10%;
@@ -16,15 +14,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 h1 {
     font-weight: normal;
 }
-
 .logo {
     width:200px;
 }
-
 nav, footer {
     background-color: black;
     height: 70px;
@@ -32,71 +27,61 @@ nav, footer {
     display: flex;
     align-items: center;  
 }
-
 li {
     display: inline-block;
 }
-
 a {
     color: white;
 }
-
 .promotion {
     width: 100%;
 }
-
 .accueil {
     font-size: 20pt;
 }
-
 .ligneaccueil {
     background-color:lightgrey;
     height: 1px;
     border: none;
 }
-
 p {
     line-height: 2em;
 }
-
 .introduction {
     display: flex;
     flex-direction: row;
 }
-
 .texte {
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
 }
-
 .colonne {
     background-color: lightgrey;
     height: auto; 
     width: 30%;
 }
-
 .tableau {
     width: 500px;
 }
-
 fieldset {
     width: 50%;
+}
+textarea[name="question"]{
+    width:400px;
+    height:100px;
+    resize: none;
 }
 @media screen and (max-width: 768px) 
 {
     body {
         font-size: 1.2em;
-        }
-    
+        }   
     li {
         display: list-item;
         }
-
     .colonne {
         display: none;
         width: 0%;
         }
 }
-
-  

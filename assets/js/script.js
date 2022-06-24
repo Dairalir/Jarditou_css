@@ -33,6 +33,8 @@ function control(e){
         e.preventDefault();
         missNom.textContent = 'Format incorrect';
         missNom.style.color = 'orange';
+    }else{
+        missNom.textContent = "";
     }
     if (prenom.validity.valueMissing){
         e.preventDefault();
@@ -42,16 +44,22 @@ function control(e){
         e.preventDefault();
         missPrenom.textContent = 'Format incorrect';
         missPrenom.style.color = 'orange';
+    }else{
+        missPrenom.textContent = "";
     }
     if (masculin.validity.valueMissing || feminin.validity.valueMissing){
         e.preventDefault();
         missSex.textContent = "Selectionner un choix";
         missSex.style.color = "red";
+    }else{
+        missSex.textContent = "";
     }
     if (date.validity.valueMissing){
         e.preventDefault();
         missDate.textContent = "Champ vide";
         missDate.style.color = "red";
+    }else{
+        missDate.textContent = "";
     }
     if (cp.validity.valueMissing){
         e.preventDefault();
@@ -61,6 +69,8 @@ function control(e){
         e.preventDefault();
         missCp.textContent = 'Format incorrect';
         missCp.style.color = 'orange';
+    }else{
+        missCp.textContent = "";
     }
     if (email.validity.valueMissing){
         e.preventDefault();
@@ -70,6 +80,15 @@ function control(e){
         e.preventDefault();
         missEmail.textContent = 'Format incorrect';
         missEmail.style.color = 'orange';
+    }else{
+        missEmail.textContent = "";
+    }
+    if(sujet.validity.valueMissing){
+        e.preventDefault();
+        missSujet.textContent = "Selectionnez un sujet";
+        missSujet.style.color = "red";
+    }else{
+        missSujet.textContent = "";
     }
     if (question.validity.valueMissing){
         e.preventDefault();
@@ -79,15 +98,14 @@ function control(e){
         e.preventDefault();
         missQuestion.textContent = 'Format incorrect';
         missQuestion.style.color = 'orange';
+    }else{
+        missQuestion.textContent = "";
     }
     if(accept.validity.valueMissing){
         e.preventDefault();
         missAccept.textContent = "Veuillez accepter le traitement informatique"
         missAccept.style.color = "red"
-    }
-    if(sujet.validity.valueMissing){
-        e.preventDefault();
-        missSujet.textContent = "Selectionnez un sujet";
-        missSujet.style.color = "red";
+    }else{
+        missAccept.textContent = "";
     }
 }
